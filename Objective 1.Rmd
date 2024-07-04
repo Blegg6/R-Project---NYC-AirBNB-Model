@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#load data
+#load data - NOTE: DATA CAN BE FOUND AT
 nyc<- read.csv("BMSO603 Files/Final Project/NYC_ABNB.csv")
 nyc<- nyc[!is.na(nyc$price),]
 nyc$price<- na.omit(nyc$price)
